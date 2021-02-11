@@ -1,0 +1,53 @@
+img.resize {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body {
+    background: black;
+    font-family: 'Garamond', serif;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    background-color: #767676;
+    color: white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div {
+    text-align: center;
+}
+
+#showdown{ 
+    color: #3e3b3b; 
+    animation:fadeIn 3s;
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    30%{opacity:0;}
+    100%{opacity:1;}
+}
+
+#showdown:hover{
+    color: red;
+    /* Start https://www.cursors-4u.com */ 
+    cursor: url(https://cur.cursors-4u.net/others/oth-8/oth702.cur), auto;
+    /* End https://www.cursors-4u.com */
+}
