@@ -64,9 +64,13 @@ canvas[resize] {
 
 .container {
     padding-bottom: 2vw;
-    padding-top: 2vw;
+    padding-top: 3vw;
     padding-left: 5vw;
     padding-right: 5vw;
+}
+
+.container-sub{
+    padding-left: 1vw;
 }
 
 footer {
@@ -105,7 +109,7 @@ h1 {
 
 h2 {
     margin-top: 0.5vw;
-    margin-bottom: 0.2vw;
+    margin-bottom: 0.4vw;
 }
 
 /*
@@ -162,9 +166,8 @@ iframe{
 }
 */
 
-
 @media only screen and (max-width: 600px) {
-    canvas#snakeCanvas {
+    #cursor-canvas canvas{
         display: none;
     }
 }
