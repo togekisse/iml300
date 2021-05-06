@@ -62,14 +62,14 @@ canvas[resize] {
     pointer-events: none;
 }
 
-.container {
+.container, #thoughts {
     padding-bottom: 2vw;
-    padding-top: 3vw;
+    padding-top: 5vw;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.container-sub{
+.container-sub {
     padding-left: 1vw;
 }
 
@@ -102,14 +102,15 @@ h3 {
     margin: 0px;
 }
 
-h1 {
+h1 span{
     margin-bottom: 1vw;
-    text-shadow: 1px 1px 5px 5px violet;
+    background-color: violet;
+    padding: 3px;
+
 }
 
-h2 {
+h2, h3 {
     margin-top: 0.5vw;
-    margin-bottom: 0.4vw;
 }
 
 /*
@@ -143,9 +144,11 @@ img {
     line-height: 1.2em;
 }
 
-#thoughts {
-    padding: 5vw;
+/*
+.thoughts-grid{
+    padding-top:1vw;
 }
+*/
 
 .thoughts-para {
     padding-left: 3vw;

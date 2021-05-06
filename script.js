@@ -1,4 +1,4 @@
-//MOUSE PATH CREDIT: Used my handy dandy Inspect console on (https://brasme.fr) and did lots of poring over Paper.js documentation AND I DID IT AAAAAAAA and it only took 2 days of my precious time during finals. Worth it kinda.
+//MOUSE PATH CREDIT: Used my handy dandy Inspect console on (https://brasme.fr) and did lots of poring over Paper.js documentation AND I DID IT AAAAAAAA and it only took 2 days of my precious time during finals. Took a while because I don't think Brackets supports text/paperscript styling. Worth it kinda.
 
 var points = 15;
 var length = 10;
