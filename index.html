@@ -8,6 +8,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
 
+    <script type="text/paperscript" src="script.js" canvas="cursor-canvas">
+    </script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="/assets/favicon.png" />
 
@@ -16,36 +19,6 @@
 
 <body>
     <canvas id="cursor-canvas" resize></canvas>
-    <script type="text/paperscript" canvas="cursor-canvas">
-            var points = 15;
-            var length = 10;
-
-            var path = new Path({
-                strokeColor: '#ffffff',
-                strokeWidth: 20,
-                strokeCap: 'square'
-            });
-
-            var start = view.center / [10, 1];
-            for (var i = 0; i < points; i++)
-                path.add(start + new Point(i * length, 0));
-
-            function onMouseMove(event) {
-                path.firstSegment.point = event.point;
-                for (var i = 0; i < points - 1; i++) {
-                    var segment = path.segments[i];
-                    var nextSegment = segment.next;
-                    var vector = segment.point - nextSegment.point;
-                    vector.length = length;
-                    nextSegment.point = segment.point - vector;
-                }
-                path.smooth({
-                    type: 'continuous'
-                });
-            }
-        }
-
-    </script>
 
     <!--   Sticky Note interactivity-->
     <script type="text/javascript">
@@ -113,7 +86,7 @@
 
     <div class="container">
         <h1>thoughts</h1>
-        <a href="/subpages/thoughts.html">doing the reading</a>
+        <a href="subpages/thoughts.html">doing the reading</a>
     </div>
 
     <footer>
