@@ -15,92 +15,113 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
     <script type="text/paperscript" src="/background.js" canvas="cursor-canvas"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" />
+    
     <title>thoughts</title>
 </head>
 
 <body>
-    <div>
+    <div id = "thoughts">
         <h1>thoughts</h1>
-        <div>
-            <h3>2/11 Lecture</h3>
-            <p>Admittingly, I was already aware that computer programming used to be coded (haha) as traditionally women's work. While men are still the most visible in the field nowadays, I'm also reminded of how, as the gendered division became more apparent, the mid-century booming interest in tech necessitated that <a href="https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fulllist/first/en122/lecturelist2019-20/nakamura_indigenous-circuits.pdf">labor be shoved off onto Navajo women in early chip factories</a>. Thinking about the racialization of having "nimble fingers" or being "flexible" and "painless manufacturing", which we can also apply to the notable modern demographic of Asian labor in chip factories. However, I truthfully did not have a concrete grasp of what "the Internet" entailed. While I sorta knew that the cloud metaphor was incorrect, I'd never bothered to understand further. The visualization of a long wire underground, with various clients and providers hooked up to it, was very helpful in helping to demystify the Internet. I had previously entertained this inane idea that Internet providers simply gathered waves from the "Internet cloud"... well, now I know!</p>
+        <div class="thoughts-grid">
+            <h3>2/11 lecture</h3>
+            <div class="thoughts-para">
+                <p>Admittingly, I was already aware that computer programming used to be coded (haha) as traditionally women's work. While men are still the most visible in the field nowadays, I'm also reminded of how, as the gendered division became more apparent, the mid-century booming interest in tech necessitated that <a href="https://warwick.ac.uk/fac/arts/english/currentstudents/undergraduate/modules/fulllist/first/en122/lecturelist2019-20/nakamura_indigenous-circuits.pdf">labor be shoved off onto Navajo women in early chip factories</a>. Thinking about the racialization of having "nimble fingers" or being "flexible" and "painless manufacturing", which we can also apply to the notable modern demographic of Asian labor in chip factories. However, I truthfully did not have a concrete grasp of what "the Internet" entailed. While I sorta knew that the cloud metaphor was incorrect, I'd never bothered to understand further. The visualization of a long wire underground, with various clients and providers hooked up to it, was very helpful in helping to demystify the Internet. I had previously entertained this inane idea that Internet providers simply gathered waves from the "Internet cloud"... well, now I know!</p>
+            </div>
         </div>
 
-        <div>
-            <h3>2/18 Reading</h3>
-            <p>In “Rich User Experience, UX and Desktopization of War,” Olia Lialina critiques the persistent belief in UX design vocabulary and principles. Whereas early web design flourished in amateur expression, promoting simple and template-less webpages that encouraged human-to-human contact, today's design has become obfuscated by UX speak. "User experience" now replaces the interface, with UX perceiving the interface as a blockage to seamless, natural interaction. Accordingly, UX exists off of the "user illusion," scripting direct paths for the user with intent to leave the computer behind. Lialina cautions against the desktopization of war, in which user illusion trends above the gamification of war; the seamless computer interface fashions the act of killing as a simple task at hand, an experience as rote as using the Photoshop eraser tool.
-            <p>
-            <p>"Black Gooey Universe" discusses the white default of the graphical user interface, GUI, or "gooey", in conjunction with the cisgender white male hegemony of Silicon Valley. A white interface is synonymous with productivity and corporate sleekness. But how might a black gooey disrupt and complicate our interaction with hardware and interface? White gooeys have become synonymous with neutrality, negating the sociopolitical relations of visualization, and yet all contemporary gooeys trace their origin from the inescapable blackness of an LCD monitor. An experience is never wholly natural, and we must interrogate and complicate our conditioned realities.</p>
-            <ul>
-                <li>
-                    <p>While I've recognized the pervasiveness of the white interface, I never viewed it as inherently comfortable or natural, especially in basic viewing experience (haha). Now, "dark modes" are popular on sites like Twitter and Discord. Do these gooeys align with the slow complexity advocated for in the article? In what ways do they adhere or not adhere?</p>
-                </li>
-                <li>
-                    <p>"Black Gooey Universe" briefly touches upon the racial extension of default white gooeys and anti-Blackness in contemorary gooey design. Can you elaborate on any racial extensions of this argument in today's tech trends and industry happenings?</p>
-                </li>
-                <li>
-                    <p>Lialina cites several examples of user scripting in UX design and copy. Are there examples of obfuscating UX design and copy that you find irritatingly confining? Or do you think such copy makes the interface more approachable and accessible?</p>
-                </li>
-                <li>
-                    <p>What are your thoughts on the increased popularity (necessity?) of site templates like Wordpress and Squarespace?</p>
-                </li>
-            </ul>
+        <div class="thoughts-grid">
+            <h3>2/18 reading</h3>
+            <div class="thoughts-para">
+                <p>In “Rich User Experience, UX and Desktopization of War,” Olia Lialina critiques the persistent belief in UX design vocabulary and principles. Whereas early web design flourished in amateur expression, promoting simple and template-less webpages that encouraged human-to-human contact, today's design has become obfuscated by UX speak. "User experience" now replaces the interface, with UX perceiving the interface as a blockage to seamless, natural interaction. Accordingly, UX exists off of the "user illusion," scripting direct paths for the user with intent to leave the computer behind. Lialina cautions against the desktopization of war, in which user illusion trends above the gamification of war; the seamless computer interface fashions the act of killing as a simple task at hand, an experience as rote as using the Photoshop eraser tool.
+                <p>
+                <p>"Black Gooey Universe" discusses the white default of the graphical user interface, GUI, or "gooey", in conjunction with the cisgender white male hegemony of Silicon Valley. A white interface is synonymous with productivity and corporate sleekness. But how might a black gooey disrupt and complicate our interaction with hardware and interface? White gooeys have become synonymous with neutrality, negating the sociopolitical relations of visualization, and yet all contemporary gooeys trace their origin from the inescapable blackness of an LCD monitor. An experience is never wholly natural, and we must interrogate and complicate our conditioned realities.</p>
+                <ul>
+                    <li>
+                        <p>While I've recognized the pervasiveness of the white interface, I never viewed it as inherently comfortable or natural, especially in basic viewing experience (haha). Now, "dark modes" are popular on sites like Twitter and Discord. Do these gooeys align with the slow complexity advocated for in the article? In what ways do they adhere or not adhere?</p>
+                    </li>
+                    <li>
+                        <p>"Black Gooey Universe" briefly touches upon the racial extension of default white gooeys and anti-Blackness in contemorary gooey design. Can you elaborate on any racial extensions of this argument in today's tech trends and industry happenings?</p>
+                    </li>
+                    <li>
+                        <p>Lialina cites several examples of user scripting in UX design and copy. Are there examples of obfuscating UX design and copy that you find irritatingly confining? Or do you think such copy makes the interface more approachable and accessible?</p>
+                    </li>
+                    <li>
+                        <p>What are your thoughts on the increased popularity (necessity?) of site templates like Wordpress and Squarespace?</p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h3>2/25 Reading</h3>
-            <p>In her TED talk "I steal DNA from strangers", artist Heather Dewey-Hagborg discusses her work Stranger Visions, a series of 3D-printed portraits derived from collected DNA. Dewey-Hagborg collected this DNA from the mundane crevices of public life, such as from hair stuck in couch cushions or gum from a neighborhood sidewalk. Her work became widely circulated by news outlets for its ethical controversies, which completed her critical interrogation of new developments in DNA tracing and surveillance technology. In drawing attention to this worrying development, Dewey-Hagborg also advocates for open-source knowledge to DNA spoofing, prompting a deeper analysis of what bioencryption and privacy entail. Is invisibility achievable, especially when dealing with the minutia of DNA?</p>
-            <p>Lauren McCarthy's work investigates the often uncomfortable or awkward slippage between humans and how they connect with one another and "intelligent" surveillance technology. In "Follower", participants apply to be followed by McCarthy for a short day, desiring a distant but omnipresent connection with a stranger. McCarthy critiques the control of AI home surveillance like Alexa and Nest, and in her project "Lauren", attempts to become a "better Alexa" by controlling participant's home features herself (she admits she couldn't help but "be herself" -- still distant and awkward, not wanting to intrude). McCarthy cites the oft-overlooked human input of technology: "algorithms" don't exist as autonomous equations and code; humans are programming and soldering and listening and documenting and feeling for you as well.</p>
-            <p>Surveillance theory is "based on a presumption of entitlement to access, by right or by force," in which the surveilled are either unable or cannot provide consent. Sydette Harris illuminates how this is also a vague concept usually applied to big tech, rather than understanding the constant social surveillance experienced by Black people and specifically Black women. When covering Black women, nonblack writers will culturally surveil, sexualizing their appearance and minimizing their achievements while simultaneously erasing their Blackness. Black women also face abuse from stalkers, online doxxing, and police. It is all too often that nonblack people demand that Black women further expose themselves for public sympathy, disregarding their own testimony and trauma as surveilled subjects. Fixating on new developments in surveillance technology ignores our preexisting hegemonic standards of monitoring.</p>
-            <ul>
-                <li>
-                    <p>How would you feel if Dewey-Hagborg exhibited a portrait of yourself for her exhibition? In what ways does her work succeed or fail at critiquing biosurveillance? In what ways does it align with biosurveillance anxities, especially considering how several of her subject portraits were BIPOC? Dewey-Hagborg mentions using 23andme for herself: what surveillance and data mining concerns arise from these commercial DNA services?</p>
-                </li>
-                <li>
-                    <p>Do you use surveillance technology in your home? Whose idea was it (your's, family, friend, etc.) to implement such technology, and with what reasoning? How has it changed your life, for better and/or worse?</p>
-                </li>
-                <li>
-                    <p>What are other examples of surveillance you see beyond the home?</p>
-                </li>
-            </ul>
+        <div class="thoughts-grid">
+            <h3>2/25 reading</h3>
+            <div class="thoughts-para">
+                <p>In her TED talk "I steal DNA from strangers", artist Heather Dewey-Hagborg discusses her work Stranger Visions, a series of 3D-printed portraits derived from collected DNA. Dewey-Hagborg collected this DNA from the mundane crevices of public life, such as from hair stuck in couch cushions or gum from a neighborhood sidewalk. Her work became widely circulated by news outlets for its ethical controversies, which completed her critical interrogation of new developments in DNA tracing and surveillance technology. In drawing attention to this worrying development, Dewey-Hagborg also advocates for open-source knowledge to DNA spoofing, prompting a deeper analysis of what bioencryption and privacy entail. Is invisibility achievable, especially when dealing with the minutia of DNA?</p>
+                <p>Lauren McCarthy's work investigates the often uncomfortable or awkward slippage between humans and how they connect with one another and "intelligent" surveillance technology. In "Follower", participants apply to be followed by McCarthy for a short day, desiring a distant but omnipresent connection with a stranger. McCarthy critiques the control of AI home surveillance like Alexa and Nest, and in her project "Lauren", attempts to become a "better Alexa" by controlling participant's home features herself (she admits she couldn't help but "be herself" -- still distant and awkward, not wanting to intrude). McCarthy cites the oft-overlooked human input of technology: "algorithms" don't exist as autonomous equations and code; humans are programming and soldering and listening and documenting and feeling for you as well.</p>
+                <p>Surveillance theory is "based on a presumption of entitlement to access, by right or by force," in which the surveilled are either unable or cannot provide consent. Sydette Harris illuminates how this is also a vague concept usually applied to big tech, rather than understanding the constant social surveillance experienced by Black people and specifically Black women. When covering Black women, nonblack writers will culturally surveil, sexualizing their appearance and minimizing their achievements while simultaneously erasing their Blackness. Black women also face abuse from stalkers, online doxxing, and police. It is all too often that nonblack people demand that Black women further expose themselves for public sympathy, disregarding their own testimony and trauma as surveilled subjects. Fixating on new developments in surveillance technology ignores our preexisting hegemonic standards of monitoring.</p>
+                <ul>
+                    <li>
+                        <p>How would you feel if Dewey-Hagborg exhibited a portrait of yourself for her exhibition? In what ways does her work succeed or fail at critiquing biosurveillance? In what ways does it align with biosurveillance anxities, especially considering how several of her subject portraits were BIPOC? Dewey-Hagborg mentions using 23andme for herself: what surveillance and data mining concerns arise from these commercial DNA services?</p>
+                    </li>
+                    <li>
+                        <p>Do you use surveillance technology in your home? Whose idea was it (your's, family, friend, etc.) to implement such technology, and with what reasoning? How has it changed your life, for better and/or worse?</p>
+                    </li>
+                    <li>
+                        <p>What are other examples of surveillance you see beyond the home?</p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h3>3/04 Reading</h3>
-            <p>An Xiao Mina reorients the meme not just as a comedic internet curio, but as a discursive element that is constantly being redefined and remixed for new social interactions. Memes are considered a more private, niche form of internet culture, and their specificity lies in affirming personal beliefs. Memes can be used by activists to circumvent traditional power structures, or they can be co-opted by the power structures themselves.</p>
-            <p>Drawing upon communist thought, Hito Steyerl articulates the "poor image" as the "lumpen proletariat in the class society of appearances," with high-resolution, "rich" images being more highly valued, especially considering the capitalist requirements of consumer production. A poor image is not only a low-resolution, amateur image; it is an abstraction of visual depiction, it has no coherent lineage or label. Steyerl argues that poor images are popular images, with users not only creating and distributing images, but also becoming "editors, critics, translators, and (co)-authors of poor images." The poor image is able to function in an alternative network outside hegemonic oversight while also building connection, discourse, and communities. Rather than being anchored to the "ordinary original," the poor image is a medium for the unexpected, temporal nature of reality itself.</p>
-            <p>Rosa Menkman provides a similar argument in "Glitch Studies Manifesto," in which she combates the stigma of technological imperfection. She argues that glitch studies balance "nonsense and knowledge"; glitches muddle and confuse accepted norms, prompting people to reflect and theorize on not just the machine, but also on their sociopolitical and aesthetic interactions with the display. To further illustrate her argument, each page of "Glitch Studies Manifesto" features glitches in text layout display and organization.</p>
-            <ul>
-                <li>
-                    <p>How might glitch art or the poor image be exclusionary?</p>
-                </li>
-                <li>
-                    <p>Can reactionary memes truly be reclaimed by marginalized groups if the original template is still traceable and recognizable? An Xiao Mina cites the different iterations of "MAGA," with examples of "Make America Mexican Again" and "Make America Goth Again." While memes function in circles of niche internet comedy, I'm thinking about the dangers of unwittingly spreading, say, alt-right dogwhistles (Nordic Gamer, Jewish caricature). How does this adhere or depart from the principals of the poor image?</p>
-                </li>
-                <li>
-                    <p>What role does the physical device play in transmitting the poor image, glitch (art), and meme?</p>
-                </li>
-            </ul>
+        <div class="thoughts-grid">
+            <h3>3/04 reading</h3>
+            <div class="thoughts-para">
+                <p>An Xiao Mina reorients the meme not just as a comedic internet curio, but as a discursive element that is constantly being redefined and remixed for new social interactions. Memes are considered a more private, niche form of internet culture, and their specificity lies in affirming personal beliefs. Memes can be used by activists to circumvent traditional power structures, or they can be co-opted by the power structures themselves.</p>
+                <p>Drawing upon communist thought, Hito Steyerl articulates the "poor image" as the "lumpen proletariat in the class society of appearances," with high-resolution, "rich" images being more highly valued, especially considering the capitalist requirements of consumer production. A poor image is not only a low-resolution, amateur image; it is an abstraction of visual depiction, it has no coherent lineage or label. Steyerl argues that poor images are popular images, with users not only creating and distributing images, but also becoming "editors, critics, translators, and (co)-authors of poor images." The poor image is able to function in an alternative network outside hegemonic oversight while also building connection, discourse, and communities. Rather than being anchored to the "ordinary original," the poor image is a medium for the unexpected, temporal nature of reality itself.</p>
+                <p>Rosa Menkman provides a similar argument in "Glitch Studies Manifesto," in which she combates the stigma of technological imperfection. She argues that glitch studies balance "nonsense and knowledge"; glitches muddle and confuse accepted norms, prompting people to reflect and theorize on not just the machine, but also on their sociopolitical and aesthetic interactions with the display. To further illustrate her argument, each page of "Glitch Studies Manifesto" features glitches in text layout display and organization.</p>
+                <ul>
+                    <li>
+                        <p>How might glitch art or the poor image be exclusionary?</p>
+                    </li>
+                    <li>
+                        <p>Can reactionary memes truly be reclaimed by marginalized groups if the original template is still traceable and recognizable? An Xiao Mina cites the different iterations of "MAGA," with examples of "Make America Mexican Again" and "Make America Goth Again." While memes function in circles of niche internet comedy, I'm thinking about the dangers of unwittingly spreading, say, alt-right dogwhistles (Nordic Gamer, Jewish caricature). How does this adhere or depart from the principals of the poor image?</p>
+                    </li>
+                    <li>
+                        <p>What role does the physical device play in transmitting the poor image, glitch (art), and meme?</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
-                <div>
-            <h3>3/11 Reading</h3>
-            <p>While working with facial recognition software, Joy Buolamwini discovered that there was an racialized discrepancy: the software couldn't recognize faces of darker skin tones. Buolamwini cites the "coded gaze," which refers to how computer systems are given "sight" via machine learning with training sets. Buolamwini emphasizes that these training sets and coding practices are created by people, so to combat a world where racialized algorithims are increasingly used for insurance policies and jail sentencing, it's important that we consider who codes, how we code, and why we code.</p>
-            <p>Stephanie Dinkins calls out the hypocrisy of supposedly equalizing systems of power, like the Constitution, and points out how American society has worryingly internalized these power relations as intrinsic rather than exclusionary. AI has become the new landscape for transplanting systems of oppression, and so Dinkins calls for a more expansive and equitable vision instead: Afro-now-ism, which espouses the present for personal reimagination and active community resistance.</p>
-            <p>In her talk "How We Became Machine Readable," Mimi Onuoha dismantles the myth that datasets are an inherently unbiased and uniform distillation of society: data collection itself is performed by humans, who project their own biases. Onuoha admits that data collection can never be fully representative, but data sets of the past ought to be recontextualized, and data collection must be a communicative and continual interrogation rather than a singular answer.</p>
-            <ul>
-                <li>
-                    <p>What facial recognition softwares do you encounter in your daily routine? How have they affected your life?</p>
-                </li>
-                <li>
-                    <p>Company hiring practices often involve applicant tracking systems that sift through resumes for keywords and phrases. Do you view this practice as exclusionary? If so, how might bias be encoded? What are other hiring practices that involve algorithms</p>
-                </li>
-                <li>
-                    <p>Have you ever had to create a survey (for a class or otherwise)? How did you determine the questions? To whom did you share the survey with, and why?</p>
-                </li>
-            </ul>
+
+        <div class="thoughts-grid">
+            <h3>3/11 reading</h3>
+            <div class="thoughts-para">
+                <p>While working with facial recognition software, Joy Buolamwini discovered that there was an racialized discrepancy: the software couldn't recognize faces of darker skin tones. Buolamwini cites the "coded gaze," which refers to how computer systems are given "sight" via machine learning with training sets. Buolamwini emphasizes that these training sets and coding practices are created by people, so to combat a world where racialized algorithims are increasingly used for insurance policies and jail sentencing, it's important that we consider who codes, how we code, and why we code.</p>
+                <p>Stephanie Dinkins calls out the hypocrisy of supposedly equalizing systems of power, like the Constitution, and points out how American society has worryingly internalized these power relations as intrinsic rather than exclusionary. AI has become the new landscape for transplanting systems of oppression, and so Dinkins calls for a more expansive and equitable vision instead: Afro-now-ism, which espouses the present for personal reimagination and active community resistance.</p>
+                <p>In her talk "How We Became Machine Readable," Mimi Onuoha dismantles the myth that datasets are an inherently unbiased and uniform distillation of society: data collection itself is performed by humans, who project their own biases. Onuoha admits that data collection can never be fully representative, but data sets of the past ought to be recontextualized, and data collection must be a communicative and continual interrogation rather than a singular answer.</p>
+                <ul>
+                    <li>
+                        <p>What facial recognition softwares do you encounter in your daily routine? How have they affected your life?</p>
+                    </li>
+                    <li>
+                        <p>Company hiring practices often involve applicant tracking systems that sift through resumes for keywords and phrases. Do you view this practice as exclusionary? If so, how might bias be encoded? What are other hiring practices that involve algorithms</p>
+                    </li>
+                    <li>
+                        <p>Have you ever had to create a survey (for a class or otherwise)? How did you determine the questions? To whom did you share the survey with, and why?</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="thoughts-grid">
+            <h3>virtual field trip</h3>
+            <div class="thoughts-para">
+                <p>I chose to visit Danielle Brathwaite-Shirley's <a href="https://newart.city/show/danielle">"City of Dreams"</a> because of my interest in dream construction and movies like Mullholland Drive. Upon entering the space, I was struck by the low-poly buildings, figures, and landscape, which were outlined in earth tones and bright acidic colors -- a combination of desolation and vibrancy.<br>I initially felt apprehensive as I explored the space, which reminded me of early Fallout games or even Silent Hill; I was afraid of meeting jumpscares or disturbing images. At first, I kept on the open roads, making my way around signs and buildings. It wasn't until I wondered about their solidity that I tried to pass through signs and found out that they were mutable. By passing through these thought to be solid objects, the experience became meditative, calming, and investigative as I passed through darkened "tunnels" littered with text. Rather than feeling like I was the only presence within the space, chained to arbitrary delineations of movement and visuals, I felt free to curate my own journey while simultaneously privy to an archive of others.</p>
+            </div>
         </div>
     </div>
+    
+    <p style="text-align:center"><a href="index.html">BACK</a></p>
 
     <footer>
         Angela Rong. Spring 2021.
