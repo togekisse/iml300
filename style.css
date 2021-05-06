@@ -10,6 +10,7 @@ a:hover {
     color: aliceblue;
 }
 
+/*BODY GRADIENT CREDIT from Q ^_^: https://glitch.com/edit/#!/moving-gradient-bg-demo*/
 body {
     font-family: helvetica, arial, sans-serif;
     margin: 2em;
@@ -76,12 +77,20 @@ footer {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
 }
 
-.grid-child {}
+.grid-child img {
+    flex: 1;
+    border: 1px dashed violet;
+    padding: 1vw;
+    justify-content: center;
+    width: 400px;
+    height: auto
+}
 
 h1,
 h2,
@@ -98,6 +107,13 @@ h2 {
     margin-top: 0.5vw;
     margin-bottom: 0.2vw;
 }
+
+/*
+img {
+  width: 300px;
+  height: auto
+}
+*/
 
 .sticky-draggable {
     /*   border-radius: 25px; */
