@@ -167,7 +167,7 @@ iframe{
 */
 
 @media only screen and (max-width: 600px) {
-    #cursor-canvas canvas{
+    canvas#cursor-canvas {
         display: none;
     }
 }

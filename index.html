@@ -6,21 +6,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="/assets/favicon.png" />
 
-    <script type="text/javascript">
-        paper.install(window);
-        window.onload = function() {
-            paper.setup('cursor-canvas');
+
+    <title>angela rong</title>
+</head>
+
+<body>
+    <canvas id="cursor-canvas" resize></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="cursor-canvas">
+//        paper.install(window);
+//        window.onload = function() {
+//            paper.setup('cursor-canvas');
 
             var points = 15;
             var length = 10;
 
             var path = new Path({
-                strokeColor: '#3fa535',
+                strokeColor: '#ffffff',
                 strokeWidth: 20,
                 strokeCap: 'square'
             });
@@ -45,12 +52,6 @@
         }
 
     </script>
-
-    <title>angela rong</title>
-</head>
-
-<body>
-    <canvas id="cursor-canvas" resize></canvas>
 
     <!--   Sticky Note interactivity-->
     <script type="text/javascript">
@@ -118,7 +119,7 @@
 
     <div class="container">
         <h1>thoughts</h1>
-        <a href="iml300/thoughts.html">doing the reading</a>
+        <a href="https://togekisse.github.io/iml300/thoughts.html">doing the reading</a>
     </div>
 
     <footer>
