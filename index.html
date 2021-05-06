@@ -3,49 +3,121 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Angela Rong</title>
-    <!--Update with your name-->
+
+    <script type="text/javascript">
+        paper.install(window);
+        window.onload = function() {
+            paper.setup('cursor-canvas');
+
+            var points = 15;
+            var length = 10;
+
+            var path = new Path({
+                strokeColor: '#3fa535',
+                strokeWidth: 20,
+                strokeCap: 'square'
+            });
+
+            var start = view.center / [10, 1];
+            for (var i = 0; i < points; i++)
+                path.add(start + new Point(i * length, 0));
+
+            function onMouseMove(event) {
+                path.firstSegment.point = event.point;
+                for (var i = 0; i < points - 1; i++) {
+                    var segment = path.segments[i];
+                    var nextSegment = segment.next;
+                    var vector = segment.point - nextSegment.point;
+                    vector.length = length;
+                    nextSegment.point = segment.point - vector;
+                }
+                path.smooth({
+                    type: 'continuous'
+                });
+            }
+        }
+
+    </script>
+
+    <title>angela rong</title>
 </head>
 
 <body>
-    <div>
-        <h1>Angela Rong</h1>
-        <!--Update with your name-->
-        <p>this is my website for my <i>IML300</i> class. it's nice to have you here!</p><br>
-        <img src="https://64.media.tumblr.com/tumblr_mc4j0fuCyb1qdlkyg.gif" alt="a little scribbly cat gif">
+    <canvas id="cursor-canvas" resize></canvas>
+
+    <!--   Sticky Note interactivity-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(function() {
+                $(".sticky-draggable").draggable();
+            });
+            $(".sticky-draggable").draggable({
+                containment: "#containment-wrapper",
+                scroll: false
+            });
+        })
+
+    </script>
+
+    <div class="sticky-draggable" style="height:190px; width:270px;">
+        <div class="sticky-note">
+            <p> hi, i'm Angela!<br>
+
+                i'm a junior majoring in American Popular Culture while double minoring in Digital Studies and Cinematic Arts. just starting to explore web design. <br><br>
+                this is my website for my <i>IML300</i> class.
+                it's nice to have you here!</p>
+            <img src="https://64.media.tumblr.com/tumblr_mc4j0fuCyb1qdlkyg.gif" alt="a little scribbly cat gif">
+        </div>
     </div>
 
-    <div>
-        <h1>Presentation</h1>
-        <a href="">Pecha Kucha: Lorem Ipsum</a>
+    <div class = "container">
+        <h1>presentation</h1>
+
+        <a href="https://docs.google.com/presentation/d/e/2PACX-1vRszoxwOe_JDP9_TKE7pfia3WLUhty1wwKr_YokZtupbH5kk0mf2I-YSAIDDUxyedOTSFJN9ERvZBAM/pub?start=false&loop=false&delayms=15000">pecha kucha: BUFU</a>
     </div>
 
-    <div>
-        <h1>Projects</h1>
-        <h2>Project 1: HyperNarrative</h2>
-        <a href="project-1/concept.html">Concept</a><br>
-        <a href="project-1/index.html">Final: the house</a>
-        <h2>Project 2: Algorithmic Pattern and Sound</h2>
-        <a href="">Final: Lorem Ipsum</a>
-        <h2>Project 3: Networked Justice</h2>
-        <a href="">Final: Lorem Ipsum</a>
+    <div class = "container">
+        <h1>projects</h1>
+        <h2>hypernarrative</h2>
+        <a href="project-1/concept.html">concept</a><br>
+        <a href="project-1/index.html">the house</a>
+
+        <h2>algorithmic pattern and sound</h2>
+        <a href="https://editor.p5js.org/togekisse/sketches/_Jb4lsFLD">symphonic image</a>
+
+        <h2>networked justice</h2>
+        <a href="https://hiddenheadlines.glitch.me/">hidden headlines</a>
     </div>
 
-    <div>
-        <h1>Exercises</h1>
+    <div class = "container">
+        <h1>p5.js exercises</h1>
+        <!--        <iframe src="https://editor.p5js.org/togekisse/embed/fcHl1HjV8"></iframe>-->
         <ul>
-            <li><a href="">p5.js sketch 1</a></li>
-            <li><a href="">p5.js sketch 2</a></li>
-            <li><a href="">p5.js sketch 3</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/fcHl1HjV8">sketch 1: face (primitive shapes) </a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/knHDElyPN">sketch 2: drawing tool</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/QRYYlzyXD">sketch 3a: iterative pattern</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/xj0-nkLcF">sketch 3b: iterative pattern</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/h5wrKjE2T">sketch 3c: iterative pattern</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/DQyNpWFeE">sketch 4: music video</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/3BmsF0F7n">sketch 5: sliders, buttons, and text output</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/Bifd8aENe">sketch 6: particle systems (classes and objects)</a></li>
+            <li><a href="https://editor.p5js.org/togekisse/sketches/_Jb4lsFLD">sketch 7: reiteration</a></li>
         </ul>
     </div>
 
-    <!--add a h1 element called 'Thoughts' Below-->
-
+    <div class = "container">
+        <h1>thoughts</h1>
+        <a href="/thoughts.html">doing the reading</a>
+    </div>
 
     <footer>
-        Spring, 2021.
+        Angela Rong. Spring 2021.
     </footer>
 </body>
 
