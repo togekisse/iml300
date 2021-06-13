@@ -62,11 +62,12 @@ canvas[resize] {
     pointer-events: none;
 }
 
-.container, #thoughts {
-    padding-bottom: 2vw;
-    padding-top: 5vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+.container,
+#thoughts {
+    padding-bottom: 0vw;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .container-sub {
@@ -102,14 +103,15 @@ h3 {
     margin: 0px;
 }
 
-h1 span{
+h1 span {
     margin-bottom: 1vw;
     background-color: violet;
     padding: 3px;
 
 }
 
-h2, h3 {
+h2,
+h3 {
     margin-top: 0.5vw;
 }
 
